@@ -14,6 +14,7 @@ that are fast, clear and feel finished, down to the last detail.
 |---|---|---|
 | **[wLt AxisNex](https://github.com/wlt1920/AxisNex)** | Free Windows app for the PS5 DualSense: low-latency input, 1000 Hz over USB and an auto-calibrated deadzone, built for Rocket League. Released, with an installer and built-in updates. | C#, .NET 10, WPF |
 | **[wltziff.nl](https://github.com/wlt1920/wltziff-portfolio)** | My portfolio: a custom WordPress theme written from scratch, with live Spotify, YouTube and GitHub data, reviews and privacy-first analytics. [How I built it →](https://github.com/wlt1920/wltziff-portfolio) | WordPress, PHP, JavaScript, Tailwind CSS |
+| **[wltziff Analytics](https://github.com/wlt1920/wltziff-analytics)** | A privacy-first analytics dashboard I built into my site: visitor journeys step by step and a click map on the real page. No Google Analytics, no IP addresses. | WordPress, PHP, MySQL, JavaScript |
 | **[VioTaxi](https://wltziff.nl/projects/viotaxi/)** | A fast, mobile-first website for a Dutch taxi company with online booking and fixed tariffs. | WordPress, custom theme |
 | **[LVMINNA](https://wltziff.nl/projects/lvminna/)** | A complete e-commerce website for a luxury candle brand from Groningen. | WordPress, WooCommerce, ACF |
 | **[StemVrij](https://wltziff.nl/projects/stemvrij/)** | Local, privacy-focused AI app that splits music into vocals and instrumental stems, with waveforms, a mixer and export. | React, Vite, Python, FastAPI, Demucs |
