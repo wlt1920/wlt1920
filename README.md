@@ -1,6 +1,6 @@
 ## Hi, I'm Walter 👋
 
-**Software & creative developer in the Netherlands.** I design and build websites, web apps and Windows tools
+**Software & creative developer from Romania, based in the Netherlands.** I design and build websites, web apps and Windows tools
 that are fast, clear and feel finished, down to the last detail.
 
 🟢 **Open to web development roles** · [wltziff.nl](https://wltziff.nl) ·
