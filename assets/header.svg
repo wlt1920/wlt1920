@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-label="Walter Argint (wLt). I design and build web apps and tools. Open to web development roles.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E100F"/>
+      <stop offset="1" stop-color="#090A0A"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E6DCC8" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#E6DCC8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3DDC84" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#3DDC84" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F1EFE7" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#F1EFE7" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#F1EFE7" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="440" rx="22"/></clipPath>
+    <clipPath id="line1"><rect x="0" y="178" width="1200" height="96"/></clipPath>
+    <clipPath id="line2"><rect x="0" y="276" width="1200" height="96"/></clipPath>
+  </defs>
+  <style>
+    .mono { font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; letter-spacing: 2.4px; }
+    .big { font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 'Oswald', 'Bebas Neue', sans-serif; font-weight: 900; letter-spacing: 1px; }
+    .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+    .rise1 { animation: rise 0.9s cubic-bezier(.2,.8,.2,1) 0.15s both; }
+    .rise2 { animation: rise 0.9s cubic-bezier(.2,.8,.2,1) 0.35s both; }
+    .fade1 { animation: fade 0.8s ease 0.05s both; }
+    .fade2 { animation: fade 0.8s ease 0.75s both; }
+    .fade3 { animation: fade 0.8s ease 1.0s both; }
+    .draw  { stroke-dasharray: 1104; animation: draw 1.4s cubic-bezier(.6,0,.2,1) 0.1s both; }
+    .pulse { transform-origin: 63px 140px; animation: pulse 2.2s ease-out infinite; }
+    .floatA { animation: floatA 14s ease-in-out infinite alternate; }
+    .floatB { animation: floatB 18s ease-in-out infinite alternate; }
+    .mark { animation: mark 10s ease-in-out infinite alternate; }
+    .sweep { animation: sweep 6s ease-in-out 1.6s infinite; }
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes rise { from { transform: translateY(100px); } to { transform: translateY(0); } }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes draw { from { stroke-dashoffset: 1104; } to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0% { opacity: .65; transform: scale(1); } 100% { opacity: 0; transform: scale(3.2); } }
+    @keyframes floatA { from { transform: translate(0,0); } to { transform: translate(70px,30px); } }
+    @keyframes floatB { from { transform: translate(0,0); } to { transform: translate(-60px,-25px); } }
+    @keyframes mark { from { transform: translate(0,0); } to { transform: translate(-24px,6px); } }
+    @keyframes sweep { 0% { transform: translateX(-500px); } 55%, 100% { transform: translateX(1300px); } }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="440" fill="url(#bg)"/>
+    <rect width="1200" height="440" fill="url(#grid)"/>
+    <ellipse class="floatA" cx="900" cy="120" rx="420" ry="300" fill="url(#glowA)"/>
+    <ellipse class="floatB" cx="180" cy="420" rx="380" ry="260" fill="url(#glowB)"/>
+
+    <!-- Giant outlined mark, like the site -->
+    <g class="mark">
+      <text x="1230" y="392" text-anchor="end" class="big" font-size="330" fill="none" stroke="#F1EFE7" stroke-opacity="0.09" stroke-width="1.5">wlt.</text>
+    </g>
+
+    <!-- Top bar -->
+    <g class="fade1">
+      <text x="48" y="58" class="sans" font-size="30" font-weight="800" fill="#F1EFE7" letter-spacing="-1">wlt<tspan fill="#E6DCC8">.</tspan></text>
+      <text x="1152" y="54" text-anchor="end" class="mono" font-size="12" fill="#F1EFE7" fill-opacity="0.55">ROMANIA → NETHERLANDS</text>
+      <text x="48" y="102" class="mono" font-size="12" fill="#F1EFE7" fill-opacity="0.55">WALTER ARGINT — WLT / ZIFFY</text>
+      <text x="1152" y="102" text-anchor="end" class="mono" font-size="12" fill="#F1EFE7" fill-opacity="0.55">SOFTWARE &amp; CREATIVE DEVELOPER</text>
+    </g>
+    <line x1="48" y1="118" x2="1152" y2="118" stroke="#F1EFE7" stroke-opacity="0.16" class="draw"/>
+
+    <!-- Status -->
+    <g class="fade1">
+      <circle class="pulse" cx="63" cy="140" r="6" fill="#3DDC84"/>
+      <circle cx="63" cy="140" r="9" fill="#3DDC84" fill-opacity="0.18"/>
+      <circle cx="63" cy="140" r="4.5" fill="#3DDC84"/>
+      <text x="80" y="144.5" class="mono" font-size="12.5" fill="#3DDC84">OPEN TO WORK · WEB DEVELOPMENT ROLES</text>
+    </g>
+
+    <!-- Headline -->
+    <g clip-path="url(#line1)">
+      <text x="44" y="266" class="big rise1" font-size="104" fill="#F1EFE7">I DESIGN &amp; BUILD</text>
+    </g>
+    <g clip-path="url(#line2)">
+      <text x="44" y="364" class="big rise2" font-size="104" fill="#E6DCC8">WEB APPS &amp; TOOLS.</text>
+    </g>
+    <!-- Light sweep across the headline -->
+    <g clip-path="url(#line1)"><rect class="sweep" x="0" y="178" width="260" height="96" fill="url(#shine)" opacity="0.18"/></g>
+    <g clip-path="url(#line2)"><rect class="sweep" x="0" y="276" width="260" height="96" fill="url(#shine)" opacity="0.18"/></g>
+
+    <!-- Footer line -->
+    <line x1="48" y1="392" x2="1152" y2="392" stroke="#F1EFE7" stroke-opacity="0.10"/>
+    <g class="fade2">
+      <text x="48" y="418" class="sans" font-size="15" fill="#F1EFE7" fill-opacity="0.72">Websites, web apps and Windows tools that are fast, clear and feel finished, down to the last detail.<tspan class="caret" fill="#E6DCC8"> ▍</tspan></text>
+    </g>
+    <g class="fade3">
+      <text x="1152" y="418" text-anchor="end" class="mono" font-size="12" fill="#E6DCC8">WLTZIFF.NL ↗</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="439" rx="21.5" fill="none" stroke="#F1EFE7" stroke-opacity="0.10"/>
+</svg>
