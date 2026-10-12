@@ -19,7 +19,7 @@
 <img src="assets/h-work.svg" width="100%" alt="01 Selected work">
 
 <a href="https://github.com/wlt1920/AxisNex">
-  <img src="https://raw.githubusercontent.com/wlt1920/AxisNex/main/docs/banner.jpg" width="100%" alt="AxisNex: controller tuning and calibration for Windows">
+  <img src="https://raw.githubusercontent.com/wlt1920/AxisNex/main/docs/banner.jpg?v=1.3.2" width="100%" alt="AxisNex: controller tuning and calibration for Windows">
 </a>
 
 ### [AxisNex](https://github.com/wlt1920/AxisNex) &nbsp;·&nbsp; <sub>Windows app · released · auto-updates</sub>
